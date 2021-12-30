@@ -9,7 +9,7 @@ device_id, timestamp, latitude, longitude, value
 
 ## System diagram
 
-![alt text](https://github.com/YasminSimana/breezometer/blob/master/public/system_diagram.png?raw=true)
+![diagram](https://github.com/YasminSimana/breezometer/blob/main/public/system_diagram.png?raw=true)
 
 ## Requirements
 
