@@ -1,7 +1,4 @@
-from timeit import default_timer as timer
-from db import *
+from controllers.dataHandler import *
 
-start = timer()
-
-end = timer()
-print(end - start) # Time in seconds
+insertData([{"device_id": 1, "timestamp": "2022-01-01 10:10:10", "latitude": 150.2589, "longitude": 55.2456, "value": 55}])
+print(getAvgData(150.2599, 55.2455))

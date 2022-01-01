@@ -14,10 +14,11 @@ device_id, timestamp, latitude, longitude, value
 ## Requirements
 
 python 3.9
-access to cloud mongodb (or ask me for the user and password + give me your IP so I will add it to the whitelist)
+mysql DB
 
 ## How to run the program?
 
-- pull the git repo
-- In the terminal enter:
-  py -3.10 app.py
+- Get repo
+  git clone https://github.com/YasminSimana/breezometer.git
+- Run the program
+  py -3.9 app.py
