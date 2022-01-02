@@ -19,6 +19,14 @@ mysql DB
 ## How to run the program?
 
 - Get repo
+
+  ```
   git clone https://github.com/YasminSimana/breezometer.git
+  ```
+
+- Change the DB connection details in the constant.py file
+
 - Run the program
+  ```
   py -3.9 app.py
+  ```

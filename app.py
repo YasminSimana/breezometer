@@ -1,4 +1,18 @@
 from controllers.dataHandler import *
+from flask import Flask, request
 
-insertData([{"device_id": 1, "timestamp": "2022-01-01 10:10:10", "latitude": 150.2589, "longitude": 55.2456, "value": 55}])
-print(getAvgData(150.2599, 55.2455))
+app = Flask(__name__)
+
+@app.route('/data', methods = ['POST'])
+def data():
+    params = request.data
+    return insertData(params)
+
+@app.route('/get-avg', methods = ['GET'])
+def avgData():
+    lat = request.args.get('lat')
+    lon = request.args.get('lon')
+    return getAvgData(lat, lon)
+
+if __name__ == "__main__":
+    app.run()
